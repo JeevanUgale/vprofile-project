@@ -1,0 +1,5 @@
+FROM nginx
+LABEL "project"="vprofile"
+LABEL "Author"="jeevan"
+RUN rm -rf /etc/nginx/conf.d/default.conf
+COPY nginvproapp.conf /etc/nginx/conf.d/vproapp.conf
